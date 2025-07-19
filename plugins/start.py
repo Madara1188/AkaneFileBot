@@ -90,7 +90,7 @@ async def start_command(client: Client, message: Message):
         buttons = [[InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data = "about"), InlineKeyboardButton("✌️ ᴏᴡɴᴇʀ ✌️", user_id = client.owner)]]
         if user_id in client.admins:
             buttons.insert(0, [InlineKeyboardButton("⛩️ ꜱᴇᴛᴛɪɴɢꜱ ⛩️", callback_data="settings")])
-        photo = client.messages.get("START_PHOTO", "")
+        photo = client.messages.get("START_PHOTO", "https://graph.org//file/6a197da7a1e166e62cbda.jpg")
         if photo:
             await client.send_photo(
                 chat_id=message.chat.id,
