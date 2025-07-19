@@ -8,7 +8,7 @@
         "db_uri": "mongodb+srv://Furina:Furina@cluster0.nqumuxn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Furina",
         "fsubs": [[-1001657372440, true, 5]],
-        "db": --1002253541678,
+        "db": "-1002253541678",
         "auto_del": 0,
         "messages": {
             "START": "<blockquote expandable>__Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit sed.\nVivamus luctus urna sed urna.\nCurabitur blandit tempus porttitor.\nNullam quis risus eget urna.__</blockquote>",
@@ -18,7 +18,7 @@
             "START_PHOTO": "",
             "FSUB_PHOTO": ""
         },
-        "admins": [5734659617],
+        "admins": "",
         "disable_btn": true,
         "protect": false
     }
