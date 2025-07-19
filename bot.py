@@ -37,7 +37,7 @@ class Bot(Client):
         self.protect = protect
         self.req_fsub = {}
         self.disable_btn = disable_btn
-        self.reply_text = messages.get('REPLY', 'Do not send any useless message in the bot.')
+        self.reply_text = messages.get('REPLY', 'Do not send any useless message you are not my oppa...!')
         self.mongodb = MongoDB(db_uri, db_name)
         self.req_channels = []
     
@@ -71,12 +71,12 @@ class Bot(Client):
         try:
             db_channel = await self.get_chat(self.db)
             self.db_channel = db_channel
-            test = await self.send_message(chat_id = db_channel.id, text = "Testing Message by @VOATcb")
+            test = await self.send_message(chat_id = db_channel.id, text = "Testing Message by @Cursedfury")
             await test.delete()
         except Exception as e:
             self.LOGGER(__name__, self.name).warning(e)
             self.LOGGER(__name__, self.name).warning(f"Make Sure bot is Admin in DB Channel, and Double check the database channel Value, Current Value {self.db}")
-            self.LOGGER(__name__, self.name).info("\nBot Stopped. Join https://t.me/Yugen_Bots_Support for support")
+            self.LOGGER(__name__, self.name).info("\nBot Stopped. Join https://t.me/TEAM_DST for support")
             sys.exit()
         self.LOGGER(__name__, self.name).info("Bot Started!!")
         
